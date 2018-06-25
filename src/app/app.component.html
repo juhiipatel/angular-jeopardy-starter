@@ -6,3 +6,13 @@
 </div>
 
 <b>The Question:</b> {{questionInfo?.question}} <br>
+<b>Category:</b> {{questionInfo?.category?.title}}<br>
+<b>Point Value:</b>{{questionInfo?.value}}<br>
+<b>Answer</b> {{questionInfo?.answer}}<br>
+
+<input [(ngModel)]="answer" type="text" name="answer">
+
+
+<button (click)="submit()">Submit</button><br>
+
+<b>Your total score: </b> {{totalScore}}<br>
